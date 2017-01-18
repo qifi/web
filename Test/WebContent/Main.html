@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet" media="screen">
+			<link href="http://dubcat.cz/themes/bootstrap_3/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="http://dubcat.cz/themes/bootstrap_3/css/jquery.minicolors.css" rel="stylesheet" media="screen">
+		<link href="http://dubcat.cz/themes/bootstrap_3/css/global.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<script src="http://dubcat.cz/themes/bootstrap_3/js/jquery.min.js"></script>
+		<title>Test</title>
+	</head>
+	
+	<script>
+	
+	$(function() {
+		  $('#testbtn').hover(function() {
+		    $('#packbox').css('border', '2px solid black');
+		  }, function() {
+		    // on mouseout, reset the background colour
+		    $('#packbox').css('border', '');
+		  });
+		});
+	</script>
+
+	<body>
+		<div class="mainbox">
+		
+			<div id="packbox" class="packbox">
+		   		<div style="
+			    background-color: rgba(0, 173, 255, 0.82);
+			    color:  white;
+			    padding: 2px 10px;
+			    border-radius: 10px 2px;
+				" class="">Cena: <b>50 Kreditu</b></div>
+		  		
+		  		<font id="packname" class="kek" style="font-size: 200%;"><b>XP Pack</b></font><br>
+				<div>
+					<span style="text-align: center;">Co obsahuje tento pack?</span>
+					<br><br>
+					<ul class="list-group" style="list-style-type: disc;">
+						<li class="list=group-item" style="float: left;">
+							<div class="dotbox"></div> 120 XP lahvicek
+						</li>
+						<li class="list-item" style="float: left;">
+							<div class="dotbox"></div> 2x XP Boost na celej den
+						</li>
+					</ul>
+				</div>
+				<div id="testbtn" class="testbtn"><span><b>Buy</b></span></div>
+			</div>
+			
+			<div id="packbox" class="packbox">
+		   		<div style="
+			    background-color: rgba(0, 173, 255, 0.82);
+			    color:  white;
+			    padding: 2px 10px;
+			    border-radius: 10px 2px;
+				" class="">Cena: <b>50 Kreditu</b></div>
+		  		
+		  		<font id="packname" class="kek" style="font-size: 200%;"><b>XP Pack</b></font><br>
+				<div>
+					<span style="text-align: center;">Co obsahuje tento pack?</span>
+					<br><br>
+					<ul class="list-group" style="list-style-type: disc;">
+						<li class="list=group-item" style="float: left;">
+							<div class="dotbox"></div> 120 XP lahvicek
+						</li>
+						<li class="list-item" style="float: left;">
+							<div class="dotbox"></div> 2x XP Boost na celej den
+						</li>
+					</ul>
+				</div>
+				<div id="testbtn" class="testbtn"><span><b>Buy</b></span></div>
+			</div>
+			
+			<br>
+			<br>
+			
+			<form method="POST" action="test.php">
+				<input type="submit" value="send" name="submit">
+			</form>
+			
+		</div>
+	
+	</body>
+
+</html>
